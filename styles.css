@@ -1,91 +1,73 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-/* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    background-color: #3a3a3a;
-    padding: 10px 0;
-}
-
-.navbar a {
-    color: #f0f0f0;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.navbar a:hover {
-    color: #ff9900;
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
 }
 
 /* Header Styles */
 h1 {
     text-align: center;
-    font-size: 3rem;
-    color: #ff4500;
-    margin-top: 20px;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-/* Main Content Section */
-.main-content {
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 90%;
-    border-radius: 10px;
-}
-
-/* History Cards Section */
-.history {
+/* Flexbox Container for Cards */
+.techniques-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
-/* Card Styles */
-.card {
-    background-color: #ffffff;
+/* Individual Card Style */
+.technique-card {
+    background-color: #fff;
     border: 1px solid #ddd;
     padding: 20px;
-    margin: 10px;
-    background-color: #fefefe;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 22%; /* Each card takes up 22% of the container width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
-    width: 23%; /* Adjust width to fit 4 cards per row */
+    transition: transform 0.3s ease;
 }
 
-/* Card Image */
-.card img {
-    width: 100%;
-    border-radius: 5px;
+.technique-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
-/* Hover Effect on Cards */
-.card:hover {
-    background-color: #f2f2f2;
-    transform: scale(1.05);
-    transition: 0.3s ease-in-out;
+.technique-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-/* Media Query for Small Screens */
+.technique-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsiveness */
 @media (max-width: 768px) {
-    .card {
-        width: 45%; /* Two cards per row on medium-sized screens */
+    .technique-card {
+        width: 48%; /* Two cards per row on smaller screens */
     }
 }
 
 @media (max-width: 480px) {
-    .card {
-        width: 100%; /* Stack cards vertically on small screens */
+    .technique-card {
+        width: 100%; /* One card per row on very small screens */
     }
 }
-
 
 
