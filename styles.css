@@ -57,7 +57,7 @@ main {
     padding: 20px;
 }
 
-.intro {
+.history {
     background-color: white;
     padding: 20px;
     margin: 20px auto;
@@ -66,14 +66,63 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.intro h2 {
+.history h2 {
     font-size: 28px;
     color: #333;
 }
 
-.intro p {
+.history p {
     font-size: 18px;
     line-height: 1.6;
     color: #555;
 }
+
+/* Timeline and Cards */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-header h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.card-body {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.card img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox for responsive layout */
+@media (max-width: 768px) {
+    .timeline {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
 
