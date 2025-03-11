@@ -3,32 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detection Techniques</title>
+    <title>Detection Techniques for Deepfakes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Detection Techniques</h1>
+        <h1>Detection Techniques for Deepfakes</h1>
     </header>
+
+    <!-- Menu Bar -->
     <nav>
         <ul class="navbar">
             <li><a href="index.html">Home</a></li>
             <li><a href="history.html">History</a></li>
-            <li><a href="detection.html">Detection Techniques</a></li>
+            <li><a href="detection-techniques.html">Detection Techniques</a></li>
         </ul>
     </nav>
+
+    <!-- Main Content -->
     <main>
-        <section class="grid">
-            <div class="technique">
-                <h3>AI-based Detection</h3>
-                <p>AI and machine learning are used to identify deepfakes...</p>
+        <section class="detection-techniques">
+            <h2>Methods for Detecting Deepfakes</h2>
+            <p>Deepfake detection involves various methods to identify manipulated content. Here we explore AI-based techniques like convolutional neural networks and forensic analysis methods, including metadata analysis and pixel-level scrutiny. Real-world tools like Microsoft's Video Authenticator and Deepware Scanner help automate detection.</p>
+
+            <!-- Flexbox Grid Layout for Detection Techniques -->
+            <div class="technique-grid">
+                <!-- Technique 1: AI-Based Detection (Convolutional Neural Networks) -->
+                <div class="technique-card">
+                    <h3>AI-Based Detection (CNN)</h3>
+                    <img src="cnn-detection.jpg" alt="Convolutional Neural Network Detection">
+                    <p>Convolutional Neural Networks (CNNs) are used to detect subtle discrepancies in deepfake videos by analyzing patterns and features in images and videos that are difficult for humans to notice.</p>
+                </div>
+
+                <!-- Technique 2: Metadata Analysis -->
+                <div class="technique-card">
+                    <h3>Metadata Analysis</h3>
+                    <img src="metadata-analysis.jpg" alt="Metadata Analysis">
+                    <p>Metadata analysis involves examining hidden information within a file that might reveal signs of manipulation, such as inconsistencies in creation dates, devices used, or editing software.</p>
+                </div>
+
+                <!-- Technique 3: Pixel-Level Scrutiny -->
+                <div class="technique-card">
+                    <h3>Pixel-Level Scrutiny</h3>
+                    <img src="pixel-analysis.jpg" alt="Pixel-Level Scrutiny">
+                    <p>Pixel-level analysis detects abnormalities in video frames by identifying distortions in color, lighting, or pixel arrangement that are characteristic of deepfake manipulation.</p>
+                </div>
+
+                <!-- Technique 4: Video Authenticator (Microsoft) -->
+                <div class="technique-card">
+                    <h3>Video Authenticator</h3>
+                    <img src="video-authenticator.jpg" alt="Microsoft Video Authenticator">
+                    <p>Microsoft's Video Authenticator tool uses AI to analyze video content and provide a probability score that indicates the likelihood a video has been manipulated.</p>
+                </div>
+
+                <!-- Technique 5: Deepware Scanner -->
+                <div class="technique-card">
+                    <h3>Deepware Scanner</h3>
+                    <img src="deepware-scanner.jpg" alt="Deepware Scanner Tool">
+                    <p>Deepware Scanner is an AI-powered tool designed to detect deepfakes across different media formats, leveraging machine learning algorithms for fast, accurate detection.</p>
+                </div>
             </div>
-            <div class="technique">
-                <h3>Forensic Analysis</h3>
-                <p>Traditional methods are also applied...</p>
-            </div>
-            <!-- Add more techniques -->
         </section>
     </main>
 </body>
 </html>
+
