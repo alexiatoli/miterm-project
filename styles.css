@@ -1,21 +1,79 @@
+/* General Styles */
 body {
-	 font-family: 'Arial', sans-serif;
-	 background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
- .navbar {
-	 display: flex;
-	 justify-content: space-around;
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
- .card, .technique {
-	 border: 1px solid #ddd;
-	 padding: 20px;
-	 margin: 10px;
-	 background-color: #fff;
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333;
+    color: white;
 }
- .card img {
-	 width: 100%;
+
+h1 {
+    font-size: 48px;
+    margin: 0;
 }
- button:hover {
-	 background-color: #4CAF50;
+
+/* Menu Bar */
+nav {
+    background-color: #444;
 }
- 
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.navbar li a:hover {
+    background-color: #666;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.intro {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
