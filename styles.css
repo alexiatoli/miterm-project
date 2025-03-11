@@ -28,13 +28,6 @@ body {
     padding: 20px;
 }
 
-.detection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 20px;
-}
 
 .card {
     background-color: white;
