@@ -1,0 +1,21 @@
+body {
+	 font-family: 'Arial', sans-serif;
+	 background-color: #f4f4f4;
+}
+ .navbar {
+	 display: flex;
+	 justify-content: space-around;
+}
+ .card, .technique {
+	 border: 1px solid #ddd;
+	 padding: 20px;
+	 margin: 10px;
+	 background-color: #fff;
+}
+ .card img {
+	 width: 100%;
+}
+ button:hover {
+	 background-color: #4CAF50;
+}
+ 
