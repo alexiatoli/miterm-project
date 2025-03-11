@@ -1,48 +1,48 @@
-/* General Body Styles */
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5; /* Light background color */
-    color: #333; /* Dark text color for readability */
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 /* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-around;
-    background-color: #3a3a3a; /* Dark grey navbar */
+    background-color: #3a3a3a;
     padding: 10px 0;
 }
 
 .navbar a {
-    color: #f0f0f0; /* Light text for navbar links */
+    color: #f0f0f0;
     text-decoration: none;
     font-size: 18px;
 }
 
 .navbar a:hover {
-    color: #ff9900; /* Orange on hover for a pop of color */
+    color: #ff9900;
 }
 
 /* Header Styles */
 h1 {
     text-align: center;
     font-size: 3rem;
-    color: #ff4500; /* Bright orange for emphasis */
+    color: #ff4500;
     margin-top: 20px;
 }
 
 /* Main Content Section */
 .main-content {
     padding: 20px;
-    background-color: #ffffff; /* White background for content area */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    max-width: 80%;
-    border-radius: 10px; /* Rounded corners */
+    max-width: 90%;
+    border-radius: 10px;
 }
 
-/* Card Styles (used for History and Detection techniques) */
-.card, .technique {
+/* Card Styles */
+.card {
     background-color: #ffffff;
     border: 1px solid #ddd;
     padding: 20px;
@@ -50,116 +50,41 @@ h1 {
     background-color: #fefefe;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    text-align: center;
+    width: 23%; /* Adjust width to fit 4 cards per row */
 }
 
 /* Card Image */
 .card img {
     width: 100%;
-    border-radius: 5px; /* Rounded corners for images */
+    border-radius: 5px;
 }
 
 /* Hover Effect on Cards */
 .card:hover {
-    background-color: #f2f2f2; /* Light grey on hover */
-    transform: scale(1.05); /* Slight zoom effect */
+    background-color: #f2f2f2;
+    transform: scale(1.05);
     transition: 0.3s ease-in-out;
 }
 
-/* Button Styles */
-button {
-    background-color: #4CAF50; /* Green button */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #45a049; /* Darker green on hover */
-}
-
-/* Flexbox Grid Layout for Detection Techniques */
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.flex-item {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    padding: 15px;
-    width: 30%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Flexbox Grid for Cards */
-.card-container {
+/* Flexbox Grid for History Cards */
+.history-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
 }
 
-/* Section Headers */
-h2 {
-    color: #ff4500; /* Bright orange for headers */
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-/* Hover Effects for Links */
-a:visited {
-    color: #9c27b0; /* Purple for visited links */
-}
-
-a:hover {
-    color: #ff9900; /* Orange for hover links */
-}
-
-/* Contact Form */
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-input:focus, textarea:focus {
-    border-color: #ff4500; /* Focus on form elements with orange border */
-}
-
-button[type="submit"] {
-    background-color: #ff4500; /* Orange submit button */
-}
-
-button[type="submit"]:hover {
-    background-color: #ff6347; /* Darker orange on hover */
-}
-
-/* Media Queries for Responsiveness */
+/* Media Query for Small Screens */
 @media (max-width: 768px) {
-    .flex-item {
-        width: 45%; /* Adjust card width for smaller screens */
-    }
-
-    h1 {
-        font-size: 2.5rem; /* Smaller font size for smaller screens */
+    .card {
+        width: 45%; /* Two cards per row on medium-sized screens */
     }
 }
 
 @media (max-width: 480px) {
-    .flex-item {
-        width: 100%; /* Stack cards vertically on very small screens */
-    }
-
-    .navbar {
-        flex-direction: column; /* Stack navbar items vertically */
+    .card {
+        width: 100%; /* Stack cards vertically on small screens */
     }
 }
 
