@@ -1,129 +1,165 @@
-/* General Styles */
+/* General Body Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2, h3 {
     font-family: 'Arial', sans-serif;
-    color: #333;
+    background-color: #f5f5f5; /* Light background color */
+    color: #333; /* Dark text color for readability */
 }
 
-/* Header */
-header {
-    text-align: center;
-    padding: 50px 0;
-    background-color: #333;
-    color: white;
-}
-
-h1 {
-    font-size: 48px;
-    margin: 0;
-}
-
-/* Menu Bar */
-nav {
-    background-color: #444;
-}
-
+/* Navbar Styles */
 .navbar {
     display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 10px;
-    margin: 0;
+    justify-content: space-around;
+    background-color: #3a3a3a; /* Dark grey navbar */
+    padding: 10px 0;
 }
 
-.navbar li {
-    margin: 0 20px;
-}
-
-.navbar li a {
+.navbar a {
+    color: #f0f0f0; /* Light text for navbar links */
     text-decoration: none;
-    color: white;
-    padding: 10px 20px;
     font-size: 18px;
 }
 
-.navbar li a:hover {
-    background-color: #666;
+.navbar a:hover {
+    color: #ff9900; /* Orange on hover for a pop of color */
 }
 
-/* Main Content */
-main {
-    padding: 20px;
+/* Header Styles */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #ff4500; /* Bright orange for emphasis */
+    margin-top: 20px;
 }
 
-.detection-techniques {
-    background-color: white;
+/* Main Content Section */
+.main-content {
     padding: 20px;
+    background-color: #ffffff; /* White background for content area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
     margin: 20px auto;
+    max-width: 80%;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Card Styles (used for History and Detection techniques) */
+.card, .technique {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fefefe;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    max-width: 900px;
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Hover Effect on Cards */
+.card:hover {
+    background-color: #f2f2f2; /* Light grey on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: 0.3s ease-in-out;
+}
+
+/* Button Styles */
+button {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Flexbox Grid Layout for Detection Techniques */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flex-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 30%;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.detection-techniques h2 {
-    font-size: 28px;
-    color: #333;
-}
-
-.detection-techniques p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
-}
-
-/* Flexbox Grid Layout for Techniques */
-.technique-grid {
+/* Flexbox Grid for Cards */
+.card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
 }
 
-.technique-card {
-    background-color: #fff;
+/* Section Headers */
+h2 {
+    color: #ff4500; /* Bright orange for headers */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Hover Effects for Links */
+a:visited {
+    color: #9c27b0; /* Purple for visited links */
+}
+
+a:hover {
+    color: #ff9900; /* Orange for hover links */
+}
+
+/* Contact Form */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
     border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
+    border-radius: 5px;
 }
 
-.technique-card h3 {
-    font-size: 22px;
-    color: #333;
+input:focus, textarea:focus {
+    border-color: #ff4500; /* Focus on form elements with orange border */
 }
 
-.technique-card img {
-    width: 100%;
-    max-width: 250px;
-    margin-top: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+button[type="submit"] {
+    background-color: #ff4500; /* Orange submit button */
 }
 
-.technique-card p {
-    font-size: 16px;
-    color: #555;
-    margin-top: 10px;
+button[type="submit"]:hover {
+    background-color: #ff6347; /* Darker orange on hover */
 }
 
-/* Responsive Design */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .technique-grid {
-        flex-direction: column;
-        align-items: center;
+    .flex-item {
+        width: 45%; /* Adjust card width for smaller screens */
     }
 
-    .technique-card {
-        width: 90%;
+    h1 {
+        font-size: 2.5rem; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-item {
+        width: 100%; /* Stack cards vertically on very small screens */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
     }
 }
 
