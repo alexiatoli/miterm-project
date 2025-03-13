@@ -61,16 +61,4 @@ body {
     margin-top: 10px;
 }
 
-.history {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;  /* Centers the cards */
-    gap: 20px;  /* Adds spacing between the cards */
-    max-width: 900px;  /* Prevents stretching on larger screens */
-    margin: 0 auto;  /* Centers the section */
-}
 
-.card {
-    width: 220px;  /* Ensures each card is the same width */
-    padding: 15px;  /* Reduces padding slightly */
-}
