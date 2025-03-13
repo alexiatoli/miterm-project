@@ -96,6 +96,12 @@ header {
     margin-top: 10px;
 }
 
+.right-image {
+    float: right;
+    margin-left: 20px;  /* Space between the image and the text */
+}
+
+
 /* Footer */
 footer {
     text-align: center;
