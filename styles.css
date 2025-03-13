@@ -32,7 +32,7 @@ body {
 .technique-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     justify-content: space-between;
     padding: 20px;
 }
