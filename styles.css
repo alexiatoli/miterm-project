@@ -10,12 +10,13 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    background: linear-gradient(135deg, #ff6a00, #ee0979, #5a00ff);
     color: white;
     font-size: 28px;
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+
 
 /* Navbar */
 .navbar {
