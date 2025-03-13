@@ -8,8 +8,6 @@ body {
 .navbar {
     display: flex;
     justify-content: space-around;
-     
-   
     background-color: #333;
     padding: 10px;
 }
@@ -30,24 +28,34 @@ body {
     padding: 20px;
 }
 
+/* Flexbox Grid Layout for Technique Cards */
+.technique-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px 0;
+}
 
 .card {
-    flex-wrap: wrap;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    width: 220px;
+    width: calc(33% - 20px); /* Adjust for space between cards */
+    box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
+/* Card image styling if images are included */
 .card img {
     width: 100%;
     border-radius: 8px;
 }
 
+/* Card hover effect */
 .card:hover {
     transform: scale(1.05);
 }
@@ -62,6 +70,19 @@ body {
     font-size: 16px;
     color: #666;
     margin-top: 10px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* One card per row on small screens */
+    }
 }
 
 
